@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plagCheck</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="{{ url_for('home') }}"><img class="logo" src="static/plagcheck.png"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{ url_for('home') }}" target="_blank">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" target="_blank">About Us</a>
+                </li>
+
+                <li>
+                    <a href="https://www.google.com/" target="_blank">Google</a>
+                </li>
+                <li>
+                    <a class="sign-up" href="{{ url_for('register') }}" target="_blank">Sign up</a>
+                </li>
+            </ul>
+        </nav>
+        
+
+      </header>
+      <main>
+        <section>
+          <h2>What is PlagCheck?</h2>
+          <p>PlagCheck is a powerful plagiarism checker tool that can detect plagiarism in your documents, papers, and other texts quickly and accurately.</p>
+          <a class="buttonn marginn" href="{{ url_for('login') }}">Login</a>
+        </section>
+        <section>
+            <div class="row">
+              <h1>Our Features</h1>
+            </div>
+            <div class="row">
+              <!-- Column One -->
+              <div class="column">
+                <div class="card">
+                  <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <h3>Comprehensive plagiarism detection</h3>
+                  <p>
+                    Plagcheck can scan your text against millions of sources on the internet to identify any potential plagiarism.
+                  </p>
+                </div>
+              </div>
+              <!-- Column Two -->
+              <div class="column">
+                <div class="card">
+                  <div class="icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                  </div>
+                  <h3>Quick and accurate results</h3>
+                  <p>
+                    Plagcheck provides fast and accurate results, allowing you to quickly identify any instances of plagiarism in your work.
+                  </p>
+                </div>
+              </div>
+              <!-- Column Three -->
+              <div class="column">
+                <div class="card">
+                  <div class="icon">
+                    <i class="fa-solid fa-headset"></i>
+                  </div>
+                  <h3>Privacy and security</h3>
+                  <p>
+                    Plagcheck is committed to protecting your privacy and security, ensuring that your personal information and content are kept confidential.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+      </main>
+      <footer>
+        <p>&copy; 2023 PlagCheck</p>
+      </footer>
+
+
+</body>
+
+</html>
